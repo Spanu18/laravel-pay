@@ -1,0 +1,919 @@
+parameters:
+	ignoreErrors:
+		-
+			message: '#^Called ''env'' outside of the config directory which returns null when the config is cached, use ''config''\.$#'
+			identifier: larastan.noEnvCallsOutsideOfConfig
+			count: 16
+			path: config/laravel-pay.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Contracts\\CheckoutUrls\:\:success\(\) has parameter \$extra with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Contracts/CheckoutUrls.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Contracts\\PaymentGatewayInterface\:\:createCredentials\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Contracts/PaymentGatewayInterface.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Contracts\\PaymentGatewayInterface\:\:deactivateCheckout\(\) has parameter \$credentials with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Contracts/PaymentGatewayInterface.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Contracts\\PaymentGatewayInterface\:\:getCheckout\(\) has parameter \$credentials with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Contracts/PaymentGatewayInterface.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Contracts\\PaymentGatewayInterface\:\:refreshCredentials\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Contracts/PaymentGatewayInterface.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Contracts\\PaymentGatewayInterface\:\:refundPayment\(\) has parameter \$credentials with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Contracts/PaymentGatewayInterface.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Contracts\\SupportsDeferredCapture\:\:captureOrder\(\) has parameter \$credentials with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Contracts/SupportsDeferredCapture.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\DTO\\CheckoutResult\:\:__construct\(\) has parameter \$response with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/DTO/CheckoutResult.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\DTO\\CheckoutResult\:\:__construct\(\) has parameter \$transactions with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/DTO/CheckoutResult.php
+
+		-
+			message: '#^Property LaravelPay\\LaravelPay\\DTO\\CheckoutResult\:\:\$response type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/DTO/CheckoutResult.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\DTO\\MerchantAccount\:\:__construct\(\) has parameter \$credentials with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/DTO/MerchantAccount.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\DTO\\PaymentResult\:\:__construct\(\) has parameter \$refreshedCredentials with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/DTO/PaymentResult.php
+
+		-
+			message: '#^Property LaravelPay\\LaravelPay\\DTO\\PaymentResult\:\:\$refreshedCredentials type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/DTO/PaymentResult.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\DTO\\TransactionResult\:\:__construct\(\) has parameter \$raw with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/DTO/TransactionResult.php
+
+		-
+			message: '#^Out of 165 possible param types, only 148 \- 89\.6 %% actually have it\. Add more param types to get over 99 %%$#'
+			identifier: typeCoverage.paramTypeCoverage
+			count: 1
+			path: src/DTO/TransactionResult.php
+
+		-
+			message: '#^Out of 165 possible param types, only 148 \- 89\.6 %% actually have it\. Add more param types to get over 99 %%$#'
+			identifier: typeCoverage.paramTypeCoverage
+			count: 16
+			path: src/GatewayServiceProvider.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Adyen\:\:createCredentials\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Adyen.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Adyen\:\:deactivateCheckout\(\) has parameter \$credentials with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Adyen.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Adyen\:\:getCheckout\(\) has parameter \$credentials with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Adyen.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Adyen\:\:http\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Gateways/Adyen.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Adyen\:\:refreshCredentials\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Adyen.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Adyen\:\:refundPayment\(\) has parameter \$credentials with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Adyen.php
+
+		-
+			message: '#^Out of 160 possible return types, only 152 \- 95\.0 %% actually have it\. Add more return types to get over 99 %%$#'
+			identifier: typeCoverage.returnTypeCoverage
+			count: 1
+			path: src/Gateways/Adyen.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Axerve\:\:createCredentials\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Axerve.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Axerve\:\:deactivateCheckout\(\) has parameter \$credentials with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Axerve.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Axerve\:\:getCheckout\(\) has parameter \$credentials with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Axerve.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Axerve\:\:http\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Gateways/Axerve.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Axerve\:\:refreshCredentials\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Axerve.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Axerve\:\:refundPayment\(\) has parameter \$credentials with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Axerve.php
+
+		-
+			message: '#^Out of 160 possible return types, only 152 \- 95\.0 %% actually have it\. Add more return types to get over 99 %%$#'
+			identifier: typeCoverage.returnTypeCoverage
+			count: 1
+			path: src/Gateways/Axerve.php
+
+		-
+			message: '#^Out of 19 possible constant types, only 0 \- 0\.0 %% actually have it\. Add more constant types to get over 99 %%$#'
+			identifier: typeCoverage.constantTypeCoverage
+			count: 2
+			path: src/Gateways/Axerve.php
+
+		-
+			message: '#^Using nullsafe property access "\?\-\>email" on left side of \?\? is unnecessary\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 1
+			path: src/Gateways/Axerve.php
+
+		-
+			message: '#^Using nullsafe property access "\?\-\>name" on left side of \?\? is unnecessary\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 1
+			path: src/Gateways/Axerve.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\BinancePay\:\:certificates\(\) has parameter \$credentials with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/BinancePay.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\BinancePay\:\:createCredentials\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/BinancePay.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\BinancePay\:\:deactivateCheckout\(\) has parameter \$credentials with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/BinancePay.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\BinancePay\:\:getCheckout\(\) has parameter \$credentials with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/BinancePay.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\BinancePay\:\:refreshCredentials\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/BinancePay.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\BinancePay\:\:refundPayment\(\) has parameter \$credentials with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/BinancePay.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\BinancePay\:\:signedPost\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Gateways/BinancePay.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\BinancePay\:\:signedPost\(\) has parameter \$payload with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/BinancePay.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\BinancePay\:\:verifyWebhookSignature\(\) has parameter \$credentials with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/BinancePay.php
+
+		-
+			message: '#^Out of 160 possible return types, only 152 \- 95\.0 %% actually have it\. Add more return types to get over 99 %%$#'
+			identifier: typeCoverage.returnTypeCoverage
+			count: 1
+			path: src/Gateways/BinancePay.php
+
+		-
+			message: '#^Out of 19 possible constant types, only 0 \- 0\.0 %% actually have it\. Add more constant types to get over 99 %%$#'
+			identifier: typeCoverage.constantTypeCoverage
+			count: 1
+			path: src/Gateways/BinancePay.php
+
+		-
+			message: '#^Parameter \#1 \$content of method Illuminate\\Http\\Client\\PendingRequest\<false\>\:\:withBody\(\) expects Psr\\Http\\Message\\StreamInterface\|string, string\|false given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Gateways/BinancePay.php
+
+		-
+			message: '#^Unable to resolve the template type TKey in call to function collect$#'
+			identifier: argument.templateType
+			count: 1
+			path: src/Gateways/BinancePay.php
+
+		-
+			message: '#^Unable to resolve the template type TValue in call to function collect$#'
+			identifier: argument.templateType
+			count: 1
+			path: src/Gateways/BinancePay.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Braintree\:\:createCredentials\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Braintree.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Braintree\:\:deactivateCheckout\(\) has parameter \$credentials with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Braintree.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Braintree\:\:getCheckout\(\) has parameter \$credentials with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Braintree.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Braintree\:\:graphql\(\) has parameter \$variables with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Braintree.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Braintree\:\:refreshCredentials\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Braintree.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Braintree\:\:refundPayment\(\) has parameter \$credentials with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Braintree.php
+
+		-
+			message: '#^Out of 19 possible constant types, only 0 \- 0\.0 %% actually have it\. Add more constant types to get over 99 %%$#'
+			identifier: typeCoverage.constantTypeCoverage
+			count: 4
+			path: src/Gateways/Braintree.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Coinbase\:\:createCredentials\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Coinbase.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Coinbase\:\:deactivateCheckout\(\) has parameter \$credentials with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Coinbase.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Coinbase\:\:getCheckout\(\) has parameter \$credentials with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Coinbase.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Coinbase\:\:http\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Gateways/Coinbase.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Coinbase\:\:latestStatus\(\) has parameter \$charge with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Coinbase.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Coinbase\:\:refreshCredentials\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Coinbase.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Coinbase\:\:refundPayment\(\) has parameter \$credentials with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Coinbase.php
+
+		-
+			message: '#^Out of 160 possible return types, only 152 \- 95\.0 %% actually have it\. Add more return types to get over 99 %%$#'
+			identifier: typeCoverage.returnTypeCoverage
+			count: 1
+			path: src/Gateways/Coinbase.php
+
+		-
+			message: '#^Out of 19 possible constant types, only 0 \- 0\.0 %% actually have it\. Add more constant types to get over 99 %%$#'
+			identifier: typeCoverage.constantTypeCoverage
+			count: 1
+			path: src/Gateways/Coinbase.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Edenred\:\:createCredentials\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Edenred.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Edenred\:\:deactivateCheckout\(\) has parameter \$credentials with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Edenred.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Edenred\:\:fetchAccessToken\(\) has parameter \$credentials with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Edenred.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Edenred\:\:getCheckout\(\) has parameter \$credentials with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Edenred.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Edenred\:\:refreshCredentials\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Edenred.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Edenred\:\:refundPayment\(\) has parameter \$credentials with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Edenred.php
+
+		-
+			message: '#^Out of 19 possible constant types, only 0 \- 0\.0 %% actually have it\. Add more constant types to get over 99 %%$#'
+			identifier: typeCoverage.constantTypeCoverage
+			count: 2
+			path: src/Gateways/Edenred.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Klarna\:\:captureOrder\(\) has parameter \$credentials with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Klarna.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Klarna\:\:createCredentials\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Klarna.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Klarna\:\:deactivateCheckout\(\) has parameter \$credentials with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Klarna.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Klarna\:\:getCheckout\(\) has parameter \$credentials with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Klarna.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Klarna\:\:http\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Gateways/Klarna.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Klarna\:\:http\(\) has parameter \$credentials with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Klarna.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Klarna\:\:refreshCredentials\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Klarna.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Klarna\:\:refundPayment\(\) has parameter \$credentials with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Klarna.php
+
+		-
+			message: '#^Out of 160 possible return types, only 152 \- 95\.0 %% actually have it\. Add more return types to get over 99 %%$#'
+			identifier: typeCoverage.returnTypeCoverage
+			count: 1
+			path: src/Gateways/Klarna.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Mollie\:\:createCredentials\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Mollie.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Mollie\:\:deactivateCheckout\(\) has parameter \$credentials with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Mollie.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Mollie\:\:getCheckout\(\) has parameter \$credentials with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Mollie.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Mollie\:\:refreshCredentials\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Mollie.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Mollie\:\:refundPayment\(\) has parameter \$credentials with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Mollie.php
+
+		-
+			message: '#^Out of 19 possible constant types, only 0 \- 0\.0 %% actually have it\. Add more constant types to get over 99 %%$#'
+			identifier: typeCoverage.constantTypeCoverage
+			count: 2
+			path: src/Gateways/Mollie.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Nexi\:\:createCredentials\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Nexi.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Nexi\:\:deactivateCheckout\(\) has parameter \$credentials with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Nexi.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Nexi\:\:getCheckout\(\) has parameter \$credentials with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Nexi.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Nexi\:\:refreshCredentials\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Nexi.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Nexi\:\:refundPayment\(\) has parameter \$credentials with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Nexi.php
+
+		-
+			message: '#^Out of 19 possible constant types, only 0 \- 0\.0 %% actually have it\. Add more constant types to get over 99 %%$#'
+			identifier: typeCoverage.constantTypeCoverage
+			count: 2
+			path: src/Gateways/Nexi.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\PayPal\:\:createCredentials\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/PayPal.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\PayPal\:\:deactivateCheckout\(\) has parameter \$credentials with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/PayPal.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\PayPal\:\:getCheckout\(\) has parameter \$credentials with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/PayPal.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\PayPal\:\:refreshCredentials\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/PayPal.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\PayPal\:\:refundPayment\(\) has parameter \$credentials with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/PayPal.php
+
+		-
+			message: '#^Unable to resolve the template type TKey in call to function collect$#'
+			identifier: argument.templateType
+			count: 1
+			path: src/Gateways/PayPal.php
+
+		-
+			message: '#^Unable to resolve the template type TValue in call to function collect$#'
+			identifier: argument.templateType
+			count: 1
+			path: src/Gateways/PayPal.php
+
+		-
+			message: '#^Unable to resolve the template type TValue in call to static method Illuminate\\Support\\Arr\:\:first\(\)$#'
+			identifier: argument.templateType
+			count: 1
+			path: src/Gateways/PayPal.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Pluxee\:\:createCredentials\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Pluxee.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Pluxee\:\:deactivateCheckout\(\) has parameter \$credentials with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Pluxee.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Pluxee\:\:fetchAccessToken\(\) has parameter \$credentials with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Pluxee.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Pluxee\:\:getCheckout\(\) has parameter \$credentials with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Pluxee.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Pluxee\:\:refreshCredentials\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Pluxee.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Pluxee\:\:refundPayment\(\) has parameter \$credentials with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Pluxee.php
+
+		-
+			message: '#^Out of 19 possible constant types, only 0 \- 0\.0 %% actually have it\. Add more constant types to get over 99 %%$#'
+			identifier: typeCoverage.constantTypeCoverage
+			count: 2
+			path: src/Gateways/Pluxee.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Revolut\:\:createCredentials\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Revolut.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Revolut\:\:createCredentials\(\) should return array\{merchant_id\?\: string\|null, email\?\: string\|null, credentials\: array\} but returns array\{merchant_id\: 0, email\: ''a@a\.com'', credentials\: array\{public_key\: string, private_key\: string\}\}\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Gateways/Revolut.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Revolut\:\:deactivateCheckout\(\) has parameter \$credentials with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Revolut.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Revolut\:\:getCheckout\(\) has parameter \$credentials with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Revolut.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Revolut\:\:http\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Gateways/Revolut.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Revolut\:\:refreshCredentials\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Revolut.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Revolut\:\:refundPayment\(\) has parameter \$credentials with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Revolut.php
+
+		-
+			message: '#^Offset 0 on non\-empty\-list\<string\> on left side of \?\? always exists and is not nullable\.$#'
+			identifier: nullCoalesce.offset
+			count: 1
+			path: src/Gateways/Revolut.php
+
+		-
+			message: '#^Out of 160 possible return types, only 152 \- 95\.0 %% actually have it\. Add more return types to get over 99 %%$#'
+			identifier: typeCoverage.returnTypeCoverage
+			count: 1
+			path: src/Gateways/Revolut.php
+
+		-
+			message: '#^Out of 19 possible constant types, only 0 \- 0\.0 %% actually have it\. Add more constant types to get over 99 %%$#'
+			identifier: typeCoverage.constantTypeCoverage
+			count: 1
+			path: src/Gateways/Revolut.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Satispay\:\:createCredentials\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Satispay.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Satispay\:\:deactivateCheckout\(\) has parameter \$credentials with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Satispay.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Satispay\:\:getCheckout\(\) has parameter \$credentials with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Satispay.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Satispay\:\:http\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Gateways/Satispay.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Satispay\:\:refreshCredentials\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Satispay.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Satispay\:\:refundPayment\(\) has parameter \$credentials with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Satispay.php
+
+		-
+			message: '#^Out of 160 possible return types, only 152 \- 95\.0 %% actually have it\. Add more return types to get over 99 %%$#'
+			identifier: typeCoverage.returnTypeCoverage
+			count: 1
+			path: src/Gateways/Satispay.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Scalapay\:\:captureOrder\(\) has parameter \$credentials with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Scalapay.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Scalapay\:\:createCredentials\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Scalapay.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Scalapay\:\:deactivateCheckout\(\) has parameter \$credentials with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Scalapay.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Scalapay\:\:getCheckout\(\) has parameter \$credentials with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Scalapay.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Scalapay\:\:http\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Gateways/Scalapay.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Scalapay\:\:refreshCredentials\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Scalapay.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Scalapay\:\:refundPayment\(\) has parameter \$credentials with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Scalapay.php
+
+		-
+			message: '#^Out of 160 possible return types, only 152 \- 95\.0 %% actually have it\. Add more return types to get over 99 %%$#'
+			identifier: typeCoverage.returnTypeCoverage
+			count: 1
+			path: src/Gateways/Scalapay.php
+
+		-
+			message: '#^Out of 19 possible constant types, only 0 \- 0\.0 %% actually have it\. Add more constant types to get over 99 %%$#'
+			identifier: typeCoverage.constantTypeCoverage
+			count: 2
+			path: src/Gateways/Scalapay.php
+
+		-
+			message: '#^Using nullsafe property access "\?\-\>email" on left side of \?\? is unnecessary\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 1
+			path: src/Gateways/Scalapay.php
+
+		-
+			message: '#^Using nullsafe property access "\?\-\>name" on left side of \?\? is unnecessary\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 1
+			path: src/Gateways/Scalapay.php
+
+		-
+			message: '#^Using nullsafe property access "\?\-\>surname" on left side of \?\? is unnecessary\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 1
+			path: src/Gateways/Scalapay.php
+
+		-
+			message: '#^Cannot access property \$created on string\|Stripe\\PaymentIntent\.$#'
+			identifier: property.nonObject
+			count: 2
+			path: src/Gateways/Stripe.php
+
+		-
+			message: '#^Cannot access property \$id on string\|Stripe\\PaymentIntent\.$#'
+			identifier: property.nonObject
+			count: 1
+			path: src/Gateways/Stripe.php
+
+		-
+			message: '#^Cannot access property \$status on string\|Stripe\\PaymentIntent\.$#'
+			identifier: property.nonObject
+			count: 1
+			path: src/Gateways/Stripe.php
+
+		-
+			message: '#^Cannot call method toArray\(\) on string\|Stripe\\PaymentIntent\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: src/Gateways/Stripe.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Stripe\:\:clientFor\(\) has parameter \$credentials with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Stripe.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Stripe\:\:createCredentials\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Stripe.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Stripe\:\:deactivateCheckout\(\) has parameter \$credentials with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Stripe.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Stripe\:\:getCheckout\(\) has parameter \$credentials with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Stripe.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Stripe\:\:refreshCredentials\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Stripe.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Stripe\:\:refundPayment\(\) has parameter \$credentials with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Stripe.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Stripe\:\:resolveKey\(\) has parameter \$credentials with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Stripe.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Sumup\:\:createCredentials\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Sumup.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Sumup\:\:deactivateCheckout\(\) has parameter \$credentials with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Sumup.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Sumup\:\:getCheckout\(\) has parameter \$credentials with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Sumup.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Sumup\:\:refreshCredentials\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Sumup.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Gateways\\Sumup\:\:refundPayment\(\) has parameter \$credentials with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Gateways/Sumup.php
+
+		-
+			message: '#^Method LaravelPay\\LaravelPay\\Support\\DefaultCheckoutUrls\:\:success\(\) has parameter \$extra with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Support/DefaultCheckoutUrls.php
