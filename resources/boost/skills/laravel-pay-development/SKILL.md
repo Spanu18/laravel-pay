@@ -13,7 +13,7 @@ Use this skill when a Laravel application needs to integrate the Laravel Pay pac
 
 ## Primary Goal
 
-- apply the `laravel-pay/laravel-pay` package's public API in the smallest correct way
+- apply the `spanu18/laravel-pay` package's public API in the smallest correct way
 
 ## Workflow
 

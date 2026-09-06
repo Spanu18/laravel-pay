@@ -1,12 +1,18 @@
 {
     "$schema": "https://getcomposer.org/schema.json",
-    "name": "laravel-pay/laravel-pay",
-    "description": "This is laravel pay!",
+    "name": "spanu18/laravel-pay",
+    "description": "Multi-gateway payment processing for Laravel — Stripe, SumUp, Adyen, PayPal, Mollie, Klarna and more.",
     "keywords": [
         "laravel",
-        "laravel-pay"
+        "laravel-pay",
+        "payments",
+        "payment-gateway",
+        "stripe",
+        "sumup",
+        "adyen",
+        "paypal"
     ],
-    "homepage": "https://github.com/laravel-pay/laravel-pay",
+    "homepage": "https://github.com/Spanu18/laravel-pay",
     "license": "MIT",
     "authors": [
         {
