@@ -26,7 +26,7 @@
         "illuminate/http": "^12.0||^13.0",
         "illuminate/support": "^12.0||^13.0",
         "psr/log": "^2.0|^3.0",
-        "stripe/stripe-php": "v19.3.0",
+        "stripe/stripe-php": "v22.0.1",
         "sumup/sumup-php": "^0.1.6"
     },
     "require-dev": {
